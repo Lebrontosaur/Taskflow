@@ -6,7 +6,7 @@ You can freely use and install either the **laptop (Windows)** version, the **ph
 
 ---
 
-## 💻 Laptop (Windows Desktop)
+## Laptop (Windows Desktop)
 
 Runs as a native Windows desktop app with desktop notifications and system tray support.
 
@@ -24,7 +24,7 @@ This generates a standalone installer inside the `build/` folder.
 
 ---
 
-## 📱 Phone (Android)
+## Phone (Android)
 
 Adapted for mobile with bottom navigation, thumb-friendly buttons, and native Android alarm notifications that ring even when your phone is locked or asleep.
 
@@ -42,7 +42,7 @@ Open `http://localhost:3000` (or open your computer's local IP address on your p
 
 ---
 
-## ✨ What It Does
+## What It Does
 
 - **100% Local & Private**: No accounts, no telemetry, no cloud sync. All data stays strictly on your machine.
 - **Real Reminders & Notifications**: Sends desktop toasts on Windows and native alarms on Android.
