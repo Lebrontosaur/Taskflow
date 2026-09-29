@@ -1,0 +1,33 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "description": "A clean, modern personal task manager for Windows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.taskflow.app",
+    "productName": "Taskflow",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "**/*",
+      "!build/**"
+    ],
+    "directories": {
+      "output": "build"
+    }
+  },
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.0"
+  }
+}

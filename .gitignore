@@ -1,0 +1,28 @@
+# Node dependencies
+node_modules/
+android-app/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Electron & Mobile build outputs
+dist/
+build/
+android-app/android/app/build/
+android-app/android/.gradle/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment & local files
+.env
+.env.local
+*.log

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a2e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Taskflow</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+</head>
+<body>
+  <div id="app">
+    <!-- Top Bar with Search & Filters -->
+    <header id="mobile-top-bar" class="mobile-top-bar">
+      <div class="top-bar-row">
+        <h1 id="mobile-view-title" class="mobile-view-title">Today</h1>
+        <button id="btn-toggle-search" class="btn-icon" title="Search">🔍</button>
+      </div>
+      <div id="mobile-search-section" class="mobile-search-section hidden">
+        <div class="search-wrapper">
+          <input type="text" id="search-input" class="search-input" placeholder="Search tasks..." />
+          <button id="search-clear" class="search-clear hidden" title="Clear search">&times;</button>
+        </div>
+        <div class="filter-row">
+          <select id="filter-category" class="filter-select">
+            <option value="all">All Categories</option>
+          </select>
+          <select id="filter-priority" class="filter-select">
+            <option value="all">All Priorities</option>
+            <option value="high">High</option>
+            <option value="med">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Scrollable Content Area -->
+    <main id="main-content">
+      <div id="view-container" class="view-container"></div>
+    </main>
+
+    <!-- Floating Action Button for 1-Tap Task Creation -->
+    <button id="btn-fab-add" class="fab-btn" title="Create Task" aria-label="Add Task">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+    </button>
+
+    <!-- Bottom Navigation Bar for Mobile -->
+    <nav id="bottom-nav" class="bottom-nav"></nav>
+  </div>
+
+  <!-- Modal and Toast Overlays -->
+  <div id="modal-overlay" class="modal-overlay hidden"></div>
+  <div id="toast-container"></div>
+
+  <!-- Load API Bridge First, then Main App -->
+  <script src="api-bridge.js"></script>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

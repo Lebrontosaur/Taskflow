@@ -1,0 +1,17 @@
+{
+  "appId": "com.taskflow.app",
+  "appName": "Taskflow",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon",
+      "iconColor": "#6C63FF",
+      "sound": "beep.wav"
+    }
+  },
+  "android": {
+    "backgroundColor": "#1a1a2e",
+    "allowMixedContent": false
+  }
+}
